@@ -1,3 +1,24 @@
+# Tweet Manager Setup Instructions
+
+1) Type yarn install to setup and download packages.
+
+2) Type yarn start to run the app in development mode.
+
+3) Proxy is already set in package.json to "https://api.twitter.com".
+   (Bearer token is located in the .env file.)
+
+4) Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+5) Type yarn test to run jest/enzyme test cases.
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

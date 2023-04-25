@@ -1,0 +1,17 @@
+.filterBox {
+    background-color: #FFF;
+    min-width: 200px;
+    height: auto;
+    box-shadow: 2px 2px 4px 4px #e1e4e6;
+    border-radius: 5px;
+    padding: 10px 14px;
+
+    @media only screen and (min-width: 600px) {
+        max-width: 300px;
+        margin-left: 0;
+    }
+}
+
+.chipsBox {
+    padding: 0 0 10px 0;
+}

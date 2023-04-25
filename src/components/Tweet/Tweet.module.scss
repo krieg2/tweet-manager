@@ -1,0 +1,24 @@
+li {
+    //display: flex;
+    //flex-direction: column;
+    //flex-wrap: wrap;
+    // align-items: flex-start;
+    padding: 12px;
+    background-color: #f8f9f9;
+}
+
+li:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tweetContent {
+    display: inline-block;
+    width: 80%;
+    margin-left: 12px;
+    vertical-align: top;
+}
+
+.tweetImage {
+    display: inline-block;
+    vertical-align: top;
+}

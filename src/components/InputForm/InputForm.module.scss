@@ -1,0 +1,23 @@
+input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    padding-left: 40px;
+}
+
+::placeholder {
+    color: #677784;
+    font-size: 14px;
+}
+
+.searchIcon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    fill: #bfc5c8;
+    margin: 4px;
+}
+
+.inputForm {
+    width: 100%;
+    max-width: 800px;
+}

@@ -1,0 +1,22 @@
+.tweetList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tweetListBox {
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px 4px #e1e4e6;
+    border-radius: 5px;
+    overflow: hidden;
+    @media only screen and (max-width: 600px) {
+        margin-top: 0;
+    }
+}
+
+.loadMore {
+    background-color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
