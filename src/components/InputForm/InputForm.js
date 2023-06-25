@@ -4,21 +4,16 @@ import { ReactComponent as Icon } from "../../assets/search_black_24dp.svg";
 
 const InputForm = ({ requestTweets }) => {
     const [searchTerm, setSearchTerm] = useState("");
-    const [debouncedValue, setDebouncedValue] = useState("");
-
-    useEffect(() => {
-        requestTweets(debouncedValue);
-    }, [debouncedValue, requestTweets]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setDebouncedValue(searchTerm);
+            requestTweets(searchTerm);
         }, 500);
     
         return () => {
           clearTimeout(timer);
         };
-    }, [searchTerm]);
+    }, [searchTerm, requestTweets]);
 
     const handleChange = (e) => {
         e.preventDefault();
