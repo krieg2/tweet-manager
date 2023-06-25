@@ -22,7 +22,7 @@ const Tweet = ({ tweet }) => {
             </div>
             <div className={styles.tweetContent}>
                 <h3>@{screenName}</h3>
-                <p>{tweetText} {link ? <span><a href={link} rel="noopener" target="_blank">{link}</a></span> : null}</p>
+                <p>{tweetText} {link ? <span><a href={link} rel="noopener noreferrer" target="_blank">{link}</a></span> : null}</p>
                 <div>
                     {hashtags && hashtags.length > 0 && hashtags.map(tag => (<Chip hashtag={tag.text} key={tag.text} />))}
                 </div>

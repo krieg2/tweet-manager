@@ -11,7 +11,12 @@ export const searchTweets = async (query, maxId) => {
     headers.set("Authorization", "Bearer " + process.env.REACT_APP_TOKEN);
     headers.set("Content-Type", "application/x-www-form-urlencoded");
 
-    const response = await fetch(url, { method: "GET", headers });
-
-    return await response.json();
+    let response;
+    try {
+        let res = await fetch(url, { method: "GET", headers });
+        response = await res.json();
+    } catch(err) {
+        console.log(err);
+    }
+    return response;
 };

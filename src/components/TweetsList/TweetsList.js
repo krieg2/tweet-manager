@@ -15,7 +15,7 @@ const TweetsList = ({ tweets, requestMoreTweets }) => {
                 {tweets && tweets.length > 0 && tweets.map(tweet => (
                     <Tweet tweet={tweet} key={tweet.id_str} />
                 ))}
-                <li className={styles.loadMore}><a href="" onClick={handleClick}>Load More</a></li>
+                <li className={styles.loadMore}><a href="/#" rel="noreferrer" onClick={handleClick}>Load More</a></li>
             </ul>
         </div>
     );

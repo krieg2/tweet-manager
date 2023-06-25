@@ -7,4 +7,10 @@ const mapDispatchToProps = dispatch => {
     return bindActionCreators({ toggleFilter }, dispatch);
 };
 
-export default connect(null, mapDispatchToProps)(Chip);
+const mapStateToProps = state => {
+    return {
+        filterTag: state.filterTag
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Chip);
